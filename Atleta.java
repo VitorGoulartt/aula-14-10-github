@@ -4,4 +4,5 @@ public class Atleta {
     private int idade;
     private double pesokg;
     private double alturaMetros;
+    
 }
