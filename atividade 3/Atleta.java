@@ -42,9 +42,31 @@ public class Atleta {
     public void setalturaMetros(double alturaMetros){
         this.alturaMetros = alturaMetros;
     }
-    public void calcularIMC(){
+    public void calcularIMC(double imc){
 
+        imc = this.pesokg / (alturaMetros * alturaMetros);
+        System.out.printf("Seu e imc: %.2f", imc);
+    }
+    public void classificarCategoria(){
+        if(pesokg <= 65){
+            System.out.println("Seu peso: " + this.pesokg);
+            System.out.println("PESO-pena");
+
+        } else if(pesokg > 65 && pesokg <= 80){
+            System.out.println("Seu peso: " + this.pesokg);
+            System.out.println("PESO-medio");
+
+        }else if(pesokg > 80 && pesokg <= 120){
+            System.out.println("Seu peso: " + this.pesokg);
+            System.out.println("PESO-pesado");
+
+        }else if( pesokg <= 0 || pesokg > 120 ){
+            System.out.println("Acima do peso ou Pesagem incorreta");
+        }
         
+
+
+
     }
 
 
