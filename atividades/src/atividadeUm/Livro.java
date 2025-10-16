@@ -65,23 +65,28 @@ public void paginas(){
     System.out.println("Quantas paginas tem?");
     
 }
-public void calcularTempoLeitura(){
-    
-    if( this.quantidadePaginas <=  100 ){
+public float calcularTempoLeitura(){
+    float qualquer = (float)quantidadePaginas;
+    float quantidadeHoras = qualquer / 60;
+    return quantidadeHoras;
+
+
+    // //if( this.quantidadePaginas <=  60 ){
         
-        int tempo = 30;
-        System.out.println("O tempo para ler esse livro e de: " + tempo +" minutos" );
         
-    }else if(this.quantidadePaginas > 100){
-        int tempo2 = 3;
-        System.out.println("O tempo para ler esse livro e de: " + tempo2 +" horas" );
+    //     System.out.println("O tempo para ler esse livro e de: " + quantidadePaginas +" minutos" );
         
-    }
+    // }else if(this.quantidadePaginas > 60){
+        
+    //     System.out.println("O tempo para ler esse livro e de: " );
+    //     System.out.printf(" horas %.1f\n", quantidadePaginas);
+        
+    // }
 
 }
 public void exibirInformaçoes(){
 
- System.out.println("Titulo: " + titulo + "\nAutor: " + autor + "\nAno: " + anoPublicaçao + "\nTotal de paginas: " + quantidadePaginas );
+ System.out.println("Titulo: " + titulo + "\nAutor: " + autor + "\nAno: " + anoPublicaçao + "\nTotal de paginas: " + quantidadePaginas  + "\ntempo de leitura: " + calcularTempoLeitura()+" horas");
 }
 
 }
