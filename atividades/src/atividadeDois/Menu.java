@@ -36,4 +36,15 @@ public class Menu{
 
 
     }
+    public void mostrarAnimal(){
+         System.out.println("--------- Cadastro de Animal ---------");
+        System.out.println("1. Cadastrar um novo Animal");
+        System.out.println("2. Atualizar peso");
+        System.out.println("3. Calcular idade em anos humanos");
+        System.out.println("4. Verificar porte ");
+        System.out.println("5. Exibir informações ");
+        System.out.println("6. Sair ");
+        System.out.println("-------------------------------------");
+
+    }
 }

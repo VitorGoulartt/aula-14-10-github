@@ -20,13 +20,13 @@ public class Carro {
     public void setmodelo(String modelo){
         this.modelo = modelo;
     }
-    public String getmarca(String marca){
+    public String getmarca(){
         return marca;
     }
     public void setmarca(String marca){
         this.marca = marca;
     }
-    public int getano(int ano){
+    public int getano(){
         return ano;
     }
     public void setano(int ano){
