@@ -24,4 +24,16 @@ public class Menu{
         System.out.println("6. SAIR ");
         System.out.println("-------------------------------------");
     }
+    public void mostrarCarro(){
+         System.out.println("--------- Cadastro Carro ---------");
+        System.out.println("1. Cadastrar Veiculo");
+        System.out.println("2. Atualizar quilometragem");
+        System.out.println("3. Calcular idade do veiculo");
+        System.out.println("4. Exibir informaçoes");
+        System.out.println("5. SAIR ");
+        System.out.println("-------------------------------------");
+
+
+
+    }
 }
