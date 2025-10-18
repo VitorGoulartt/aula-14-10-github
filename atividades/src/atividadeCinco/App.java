@@ -1,6 +1,6 @@
 package atividadeCinco;
 import atividadeDois.Menu;
-import atividadeCinco.Animal;
+
 import java.util.Scanner;
 
 public class App {
@@ -17,17 +17,37 @@ public class App {
                 case 1:
                  System.out.println("Nome do animal: ");
                  animal1.setnome(sc2.nextLine());
-                System.out.println("Marca do veiculo: ");
-                carro1.setmarca(sc2.nextLine());
-                System.out.println("Ano do veiculo: ");
-                carro1.setano(sc2.nextInt());
-                System.out.println("Quilometragem do veiculo: ");
-                carro1.setquilometragem(sc2.nextDouble());
+                System.out.println("Especie do Animal: ");
+                animal1.setespecie(sc2.nextLine());
+                System.out.println("Idade do Animal: ");
+                animal1.setidade(sc2.nextInt());
+                System.out.println("Peso do Animal: ");
+                animal1.setpeso(sc2.nextDouble());
                 break;
+                
+                case 2:
+                System.out.println("Qual e o novo Peso?");
+                animal1.atualizarPeso(sc.nextDouble());
+                break;
+
+                case 3:
+                animal1.calcularIdadeEmAnosHUmanos();
+                break;
+                case 4:
+                animal1.classificarPorte();
+                break;
+                case 5:
+                animal1.exibirInformarçoes();
+                break;
+                case 6:
+                System.out.println("Encerrando sistem");
+
+
             }
 
         }while(cliente != 6);
-       
+       sc.close();
+       sc2.close();
         
     }
 

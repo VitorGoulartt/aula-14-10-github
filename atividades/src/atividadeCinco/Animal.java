@@ -84,6 +84,14 @@ public class Animal {
             System.out.println("Porte: Gigante");
 
         }
+        
+
+    }
+     public void exibirInformarçoes(){
+         System.out.println("Nome: " + this.nome);
+         System.out.println("Especie: "+ this.especie);
+         System.out.println("Idade: " + this.idade);
+         System.out.println("peso: " + this.peso);
 
     }
     
